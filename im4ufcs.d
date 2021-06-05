@@ -1,19 +1,19 @@
 /**
- * Imaginary type imitation
- * Version: 0.1
- * Date: 2021/06/05
- * See_Also:
- * URL: <a href="https://github.com/deepprog/im4ufcs">im4ufcs</a>.
- * Copyright: Copyright deepprog 2021
- * License: $(HTTP boost.org/LICENSE_1_0.txt, Boost License 1.0)
- * Authors: deepprog
- */
+* Imaginary type imitation
+* Version: 0.1
+* Date: 2021/06/05
+* See_Also:
+* URL: <a href="https://github.com/deepprog/im4ufcs">im4ufcs</a>.
+* Copyright: Copyright deepprog 2021
+* License: $(HTTP boost.org/LICENSE_1_0.txt, Boost License 1.0)
+* Authors: deepprog
+*/
 
 module im4ufcs;
 
 import std.complex;
 
-auto i(T)(T im)
+auto i(T)(T im) @safe pure nothrow @nogc
 {
     return complex(0.0, im);
 }
